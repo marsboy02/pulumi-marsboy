@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@pulumi/aws':
+    specifier: ^6.66.1
+    version: 6.66.1(typescript@5.7.2)
   '@pulumi/pulumi':
     specifier: ^3.113.0
     version: 3.144.1(typescript@5.7.2)
@@ -429,6 +432,20 @@ packages:
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
     dev: false
 
+  /@pulumi/aws@6.66.1(typescript@5.7.2):
+    resolution: {integrity: sha512-/qE/cM1X4RmNn9BDhg3ypK+us4MraxXbvvwrspyqaQixJDFlbOSF2H7cprRK7HcfoCBJaNrViacfendyxQ8zBQ==}
+    dependencies:
+      '@pulumi/pulumi': 3.144.1(typescript@5.7.2)
+      builtin-modules: 3.0.0
+      mime: 2.6.0
+      resolve: 1.22.10
+    transitivePeerDependencies:
+      - bluebird
+      - supports-color
+      - ts-node
+      - typescript
+    dev: false
+
   /@pulumi/pulumi@3.144.1(typescript@5.7.2):
     resolution: {integrity: sha512-C3kdP/uYnZygxfK18pFzs0P6IYng/rgf/NW5LXUjHMKcCSwyHbsk6l2wpuuYQiWaJFWyqLdNwDFRVf07ZcIEsA==}
     engines: {node: '>=18'}
@@ -684,6 +701,11 @@ packages:
 
   /buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
+    dev: false
+
+  /builtin-modules@3.0.0:
+    resolution: {integrity: sha512-hMIeU4K2ilbXV6Uv93ZZ0Avg/M91RaKXucQ+4me2Do1txxBDyDZWCBa5bJSLqoNTRpXTLwEzIk1KmloenDDjhg==}
+    engines: {node: '>=6'}
     dev: false
 
   /cacache@18.0.4:
@@ -1206,6 +1228,12 @@ packages:
 
   /merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
+    dev: false
+
+  /mime@2.6.0:
+    resolution: {integrity: sha512-USPkMeET31rOMiarsBNIHZKLGgvKc/LrjofAnBlOttf5ajRvqiRA8QsenbcooctK6d6Ts6aqZXBA+XbkKthiQg==}
+    engines: {node: '>=4.0.0'}
+    hasBin: true
     dev: false
 
   /mimic-fn@2.1.0:
